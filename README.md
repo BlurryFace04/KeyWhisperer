@@ -55,7 +55,6 @@ The [client script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/clien
 Change the Server IP Address and run the following command to convert your [client script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/client.py) into a standalone executable:
 ```
 pyinstaller --onefile --noconsole client.py
-
 ```
 <br>
 
