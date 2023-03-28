@@ -1,0 +1,4 @@
+socket
+pynput
+pywin32
+pyinstaller
