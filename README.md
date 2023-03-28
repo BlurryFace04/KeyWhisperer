@@ -94,4 +94,5 @@ If you find bugs or have suggestions about improving the module, don't hesitate 
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/BlurryFace04/KeyWhisperer/edit/main/LICENSE) file for details
+
 Copyright (c) 2023 Blurry Face
