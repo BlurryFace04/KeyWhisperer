@@ -26,7 +26,7 @@ def connect_to_server():
             s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
             # Connect to the host machine
-            host_ip = '143.110.180.158'  # Replace 'HOST_IP' with the IP address of your host machine
+            host_ip = 'SERVER_IP'  # Replace 'SERVER_IP' with the IP address of your server
             host_port = 12345
             s.connect((host_ip, host_port))
             return s
