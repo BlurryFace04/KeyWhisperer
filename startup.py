@@ -26,7 +26,7 @@ def create_shortcut(target, shortcut_path):
 
 if __name__ == "__main__":
     exe_path = os.path.join(os.getcwd(), "client.exe")
-    anydesk_path = r"C:\ProgramData\AnyDesk"
+    anydesk_path = r"C:<LOCATION>" # Replace <LOCATION> with your desired location to copy the file
     anydesk_client_path = os.path.join(anydesk_path, "client.exe")
 
     if not os.path.exists(anydesk_path):
