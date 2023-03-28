@@ -84,8 +84,8 @@ If using a USB flash drive, simply run the startup.exe file. This will copy the 
 You can create a script for Rubber Ducky using the following steps:
 
 1. Use the [payload.txt](https://github.com/BlurryFace04/KeyWhisperer/edit/main/payload.txt) provided in the source code and create a inject.bin (binary payload file) from [Hak5 PayloadStudio](https://payloadstudio.hak5.org/community/)
-2. Copy the inject.bin file to the root of the Rubber Ducky's microSD card.
-3. Insert the Rubber Ducky into the target system and the payload script will automatically execute the startup.exe file. 
+2. Copy the inject.bin, [client script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/client.py) and the [startup script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/startup.py) to the root of the Rubber Ducky's microSD card.
+3. Insert the Rubber Ducky into the target system and the payload script will automatically execute the startup script. 
 <br>
 
 ## Bugs, Issues and Contributing
