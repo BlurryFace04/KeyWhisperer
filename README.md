@@ -40,7 +40,7 @@ It is highly recommended to consider renting a dedicated/shared server or a virt
 
 For this tutorial, we will be using an Ubuntu Server.
 
-Once you have set up your server environment, ensure that your server script is uploaded to the server. Then, initiate the server script by executing the following command:
+Once you have set up your server environment, ensure that your [server script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/server.py) is uploaded to the server. Then, initiate the [server script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/server.py) by executing the following command:
 ```
 python3 server.py
 ```
@@ -49,10 +49,10 @@ Upon successful execution, your server will be up and running, actively listenin
 
 
 ## Client
-To prepare the client-side script for execution on the target machine, you'll need to convert it into an executable (.exe) file using PyInstaller. This process makes it easier to run the script on the target system without even requiring a separate Python installation on the target machine.
-The client script provided can be executed on both Windows and Linux operating systems.
+To prepare the [client script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/client.py) for execution on the target machine, you'll need to convert it into an executable (.exe) file using PyInstaller. This process makes it easier to run the script on the target system without even requiring a separate Python installation on the target machine.
+The [client script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/client.py) provided can be executed on both Windows and Linux operating systems.
 
-Run the following command to convert your script into a standalone executable:
+Change the Server IP Address and run the following command to convert your [client script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/client.py) into a standalone executable:
 ```
 pyinstaller --onefile --noconsole client.py
 
@@ -60,14 +60,14 @@ pyinstaller --onefile --noconsole client.py
 <br>
 
 ## Run script on startup
-In order to ensure that the keylogger runs automatically every time the target system starts, you can use the startup script.
+In order to ensure that the keylogger runs automatically every time the target system starts, you can use the [startup script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/startup.py).
 
-Run the following command to convert your script into a standalone executable:
+Run the following command to convert your [startup script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/startup.py) into a standalone executable:
 ```
 pyinstaller --onefile --noconsole startup.py
 ```
 
-This will copy the client.exe file to any derired location which can be edited in the startup.py file and create a shortcut to the client.exe file in the Windows Startup folder, ensuring that the keylogger runs every time the system starts.
+This will copy the client.exe file to any derired location which can be edited in the [startup script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/startup.py) file and create a shortcut to the client.exe file in the Windows Startup folder, ensuring that the keylogger runs every time the system starts.
 <br><br><br>
 
 ## Execution:
@@ -83,7 +83,7 @@ If using a USB flash drive, simply run the startup.exe file. This will copy the 
 ### Rubber Ducky:
 You can create a script for Rubber Ducky using the following steps:
 
-1. Use the payload.txt provided in the source code and create a inject.bin (binary payload file) from here: https://payloadstudio.hak5.org/community/
+1. Use the [payload.txt](https://github.com/BlurryFace04/KeyWhisperer/edit/main/payload.txt) provided in the source code and create a inject.bin (binary payload file) from [Hak5 PayloadStudio](https://payloadstudio.hak5.org/community/)
 2. Copy the inject.bin file to the root of the Rubber Ducky's microSD card.
 3. Insert the Rubber Ducky into the target system and the payload script will automatically execute the startup.exe file. 
 <br>
