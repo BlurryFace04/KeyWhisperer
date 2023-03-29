@@ -4,8 +4,8 @@ Welcome to the "KeyWhisperer: Keylogger with Python" tutorial, where we'll delve
 In this tutorial, we will cover the following topics:
 
 1. Setting up the project environment and required libraries
-2. Creating a [server-side script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/server.py) to receive keyboard strokes
-3. Developing a [client-side script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/client.py) to be executed on the victim machine
+2. Creating a server-side script to receive keyboard strokes
+3. Developing a client-side script to be executed on the victim machine
 4. Setting up the tool to run automatically on system startup on victim machine
 5. Run the scripts on the victim machine
 <br>
