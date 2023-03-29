@@ -52,13 +52,13 @@ Once connected, it will be saving the key logs in a file named "whispered.txt".
 
 ## Client
 To prepare the [client script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/client.py) for execution on the target machine, you'll need to convert it into an executable (.exe) file using PyInstaller. This process makes it easier to run the script on the target system without even requiring a separate Python installation on the target machine.
-The [client script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/client.py) provided can be executed on both Windows and Linux operating systems.
 
 Change the Server IP Address and run the following command to convert your [client script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/client.py) into a standalone executable:
 ```
 pyinstaller --onefile --noconsole --icon=icon.ico client.py
 ```
-<br>
+**Note:** The [client script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/client.py) provided can be executed on both Windows and Linux operating systems.
+<br><br><br>
 
 ## Run script on startup
 In order to ensure that the keylogger runs automatically every time the target system starts, you can use the [startup script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/startup.py).
@@ -67,7 +67,6 @@ Run the following command to convert your [startup script](https://github.com/Bl
 ```
 pyinstaller --onefile --noconsole --icon=icon.ico startup.py
 ```
-
 This will copy the client.exe file to any derired location which can be edited in the [startup script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/startup.py) and create a shortcut to the client.exe file in the Windows Startup folder, ensuring that the keylogger runs every time the system starts.
 <br><br><br>
 
