@@ -7,7 +7,7 @@ In this tutorial, we will cover the following topics:
 2. Creating a server-side script to receive keyboard strokes
 3. Developing a client-side script to be executed on the victim machine
 4. Setting up the tool to run automatically on system startup on victim machine
-5. Run the script on the victim machine
+5. Run the scripts on the victim machine
 <br>
 
 ## Installation
