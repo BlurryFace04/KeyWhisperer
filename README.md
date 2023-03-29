@@ -67,7 +67,7 @@ Run the following command to convert your [startup script](https://github.com/Bl
 ```
 pyinstaller --onefile --noconsole --icon=icon.ico startup.py
 ```
-This will copy the client.exe file to any derired location which can be edited in the [startup script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/startup.py) and create a shortcut to the client.exe file in the Windows Startup folder, ensuring that the keylogger runs every time the system starts.
+This will copy the client.exe file to any desired location which can be edited in the [startup script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/startup.py) and create a shortcut to the client.exe file in the Windows Startup folder, ensuring that the keylogger runs every time the system starts.
 <br><br><br>
 
 ## Execution
