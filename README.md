@@ -68,7 +68,7 @@ Run the following command to convert your [startup script](https://github.com/Bl
 pyinstaller --onefile --noconsole startup.py
 ```
 
-This will copy the client.exe file to any derired location which can be edited in the [startup script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/startup.py) file and create a shortcut to the client.exe file in the Windows Startup folder, ensuring that the keylogger runs every time the system starts.
+This will copy the client.exe file to any derired location which can be edited in the [startup script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/startup.py) and create a shortcut to the client.exe file in the Windows Startup folder, ensuring that the keylogger runs every time the system starts.
 <br><br><br>
 
 ## Execution
@@ -76,17 +76,17 @@ After generating the executable files, you will find the client.exe and startup.
 
 To deploy the keylogger on the target machine, transfer both files using an appropriate method, such as a USB flash drive, a Rubber Ducky, or another suitable technique.
 
-Once connected to the target system, execute the startup.exe file to initiate the keylogging process.
+Once connected to the target system, execute both the files to initiate the keylogging process.
 
 ### USB Flash Drive:
-If using a USB flash drive, simply run the startup.exe file. This will copy the client.exe file to the pre-defined location on the target system and create a shortcut in the Windows Startup folder, ensuring the keylogger is launched each time the system starts.
+If using a USB flash drive, simply run the client.exe and startup.exe files. This will initiate the keylogger and copy the client.exe file to the pre-defined location on the target system and create a shortcut in the Windows Startup folder, ensuring the keylogger is launched each time the system starts.
 
 ### Rubber Ducky:
 You can create a script for Rubber Ducky using the following steps:
 
 1. Use the [payload.txt](https://github.com/BlurryFace04/KeyWhisperer/edit/main/payload.txt) provided in the source code and create a inject.bin (binary payload file) from [Hak5 PayloadStudio](https://payloadstudio.hak5.org/community/)
 2. Copy the inject.bin, [client script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/client.py) and the [startup script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/startup.py) to the root of the Rubber Ducky's microSD card.
-3. Insert the Rubber Ducky into the target system and the payload script will automatically execute the startup script. 
+3. Insert the Rubber Ducky into the target system and the payload script will automatically execute the client and startup script. 
 <br>
 
 ## Bugs, Issues and Contributing
