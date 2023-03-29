@@ -46,7 +46,7 @@ python3 server.py
 ```
 Upon successful execution, your server will be up and running, actively listening for incoming connections from your keylogger clients.
 
-Once connected, it will be saving the key strokes in a file named "whispered.txt".
+Once connected, it will be saving the key logs in a file named "whispered.txt".
 <br><br><br>
 
 
