@@ -1,4 +1,7 @@
 socket
 pynput
+PySocks
 pywin32
 pyinstaller
+requests
+subprocess.run
