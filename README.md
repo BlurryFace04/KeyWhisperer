@@ -88,6 +88,41 @@ You can create a script for Rubber Ducky using the following steps:
 3. Insert the Rubber Ducky into the target system and the payload script will automatically execute both the executables. 
 <br>
 
+## Setup TOR Hidden Service on Server
+You might have noticed that in the [client script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/client.py) we have explicitly mentioned our Server IP Address, which is a potential vulnerability. So to anonymize the server, we will be using the tor network to establish communication between the client and the server.
+
+**Note:** Using Tor Hidden Service is optional but is recommended for your anonymity.
+
+Let's procees to the installation part.
+
+Install tor using the following command:
+```
+sudo apt install tor -y
+```
+
+Next, edit the Tor configuration file, torrc. The file is located at '/etc/tor/torrc'.
+```
+sudo nano /etc/tor/torrc
+```
+
+Uncomment or add the following lines:
+```
+SocksPort 9050
+HiddenServiceDir /var/lib/tor/hidden_service/
+HiddenServicePort 80 127.0.0.1:8084
+```
+
+Finally, restart Tor so it picks up your new configuration:
+```
+sudo systemctl restart tor
+```
+
+The hostname of your hidden service will be in '/var/lib/tor/hidden_service/hostname'. You can display it with:
+```
+sudo cat /var/lib/tor/hidden_service/hostname
+```
+Save this onion address because it will be used in the next in the [tor_client script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/tor_client.py)
+
 ## Bugs, Issues and Contributing
 If you find bugs or have suggestions about improving the module, don't hesitate to contact me.
 <br><br><br>
