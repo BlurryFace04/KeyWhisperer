@@ -88,10 +88,13 @@ You can create a script for Rubber Ducky using the following steps:
 3. Insert the Rubber Ducky into the target system and the payload script will automatically execute both the executables. 
 <br>
 
+### **UPDATE:** These are some additional steps if you wanna enable the client-server communication via TOR:
+<br>
+
 ## Setup TOR Hidden Service on Server
 You might have noticed that in the [client script](https://github.com/BlurryFace04/KeyWhisperer/edit/main/client.py) we have explicitly mentioned our Server IP Address, which is a potential vulnerability. So to anonymize the server, we will be using the tor network to establish communication between the client and the server.
 
-**Note:** Using Tor Hidden Service is optional but is recommended for your anonymity.
+**Note:** Using Tor Hidden Service is optional but is highly recommended for your anonymity.
 
 Let's procees to the installation part.
 
@@ -146,6 +149,7 @@ pyinstaller --onefile --noconsole --icon=icon.ico tor_client.py
 
 ## Execution
 You will have to replace the client.exe with the tor_client.exe, and also add the install_tor.exe in your pendrive or Rubber Ducky (whichever you are using) which will be executed on the victim machine.
+<br><br><br>
 
 ## Bugs, Issues and Contributing
 If you find bugs or have suggestions about improving KeyWhisperer, don't hesitate to contact me.
